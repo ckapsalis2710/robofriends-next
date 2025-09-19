@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 async function getRobot(id) {
   try {
@@ -77,12 +78,12 @@ export default async function RobotDetailPage({ params }) {
       
       {/* Back Button */}
       <div className="mt4">
-        <a 
+        <Link 
           href="/" 
           className="f5 link dim br-pill ph3 pv2 mb2 dib white bg-blue"
         >
           ← Back to All Robots
-        </a>
+        </Link>
       </div>
     </div>
   );
